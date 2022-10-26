@@ -1,7 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 :root {
@@ -14,8 +32,50 @@
   --color-grey-700: #f8f9fa;
   --color-brand-100: #087f5b;
   --color-brand-200: #099268;
+  --color-white: white;
+  
   --font-size-1: 2.5rem;
   --font-size-2: 1.75rem;
   --font-size-3: 1.25rem;
   --font-size-4: 1rem;
+
+  --radius-1: 2rem;
+
+  --font-family: 'Inter', sans-serif;
 }
+
+body {
+  font-family: var(--font-family);
+}
+
+.container {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 2.625rem;
+  width: 8rem;  
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;  
+}
+
+.observer {
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+}
+
+:target {
+  scroll-margin-top: 3rem;
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 0 1rem;
+  }
+ }
