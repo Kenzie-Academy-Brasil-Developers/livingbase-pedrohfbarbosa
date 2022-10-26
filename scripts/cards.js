@@ -24,7 +24,7 @@ export const createCard = (e) => {
   button.addEventListener("click", () => {
     localStorage.setItem("postId", e.id)
 
-    /* window.location.replace("../post/index.html") */
+    window.location.replace("../post/index.html")
   })
 
   li.appendChild(button)

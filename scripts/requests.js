@@ -29,3 +29,15 @@ export const getNews = async (page) => {
   }
 }
 
+export const getCurrentNews = async (id) => {
+  try {
+    const responseJson = await fetch(`${baseUrl}/${id}`)
+    const response = await responseJson.json()
+
+    if (responseJson.ok) {
+      return response
+    }
+  }catch (err) {
+    console.log(err)
+  }
+}
