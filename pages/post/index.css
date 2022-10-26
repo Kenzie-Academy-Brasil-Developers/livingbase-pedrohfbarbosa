@@ -14,7 +14,6 @@ header nav {
 main {
   display: flex;
   flex-direction: column;
-
   gap: 3rem;
 }
 
@@ -34,7 +33,6 @@ main {
   height: 25.125rem;
   overflow: hidden;
   object-fit: cover;
-
   margin: 2rem 0;
 }
 
@@ -43,4 +41,3 @@ main {
   height: 100%;
   object-fit: cover;
 }
-

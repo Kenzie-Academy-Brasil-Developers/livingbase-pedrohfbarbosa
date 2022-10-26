@@ -2,7 +2,6 @@ import { btnClicked, renderButtonsHome } from "../../scripts/buttons.js";
 import { renderCards } from "../../scripts/cards.js";
 import { saveCategories } from "../../scripts/categories.js";
 import { setInitialCategoryLocalStorage } from "../../scripts/localStorage.js";
-import { getCategories, getNews } from "../../scripts/requests.js";
 
 await saveCategories()
 

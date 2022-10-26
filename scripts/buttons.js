@@ -1,5 +1,3 @@
-import { renderCards } from "./cards.js"
-
 export const homeButton = () => {
   const homeButton = document.querySelector(".go-home-btn")
 

@@ -5,17 +5,13 @@ button {
 .btn-category {
   height: 2.375rem;
   padding: 0 1.375rem;
-
   border: none;
   border-radius: var(--radius-1);
-
   background-color: var(--color-grey-500);
-
   font-size: var(--font-size-4);
   font-weight: 600;
   line-height: 150%;
   color: var(--color-grey-200);
-
   flex-shrink: 0;
 }
 
@@ -32,12 +28,10 @@ button {
 .btn-card {
   width: fit-content;
   background-color: transparent;
-
   font-size: var(--font-size-4);
   font-weight: 600;
   line-height: 150%;
   color: var(--color-brand-100);
-
   border: none;
 }
 
@@ -48,12 +42,9 @@ button {
 .go-home-btn {
   height: 2.375rem;
   padding: 0 1.375rem;
-
   border: none;
   border-radius: var(--radius-1);
-
   background-color: var(--color-grey-500);
-
   font-size: var(--font-size-4);
   font-weight: 600;
   line-height: 150%;
@@ -68,12 +59,9 @@ button {
 .btn-footer {
   height: 2.375rem;
   padding: 0 1.375rem;
-
   border: none;
   border-radius: var(--radius-1);
-
   background-color: var(--color-grey-200);
-
   font-size: var(--font-size-4);
   font-weight: 600;
   line-height: 150%;
@@ -88,14 +76,11 @@ button {
 .btns-wrapper {
   display: flex;
   gap: 1rem;
-
   overflow-x: auto;
 }
 
 .btns-wrapper-post {
   display: flex;
   gap: 1rem;
-
   overflow-x: auto;
 }
-

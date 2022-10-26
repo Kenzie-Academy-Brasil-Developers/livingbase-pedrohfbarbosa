@@ -2,9 +2,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   background-color: var(--color-grey-700);
-
   padding: 5rem 0;
 }
 
@@ -12,7 +10,6 @@ header .header-main {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-
   max-width: 26.875rem;
   width: 100%;
 }
@@ -33,9 +30,7 @@ header .header-img {
   height: 27.5rem;
   width: 100%;
   max-width: 36.125rem;
-
   border-radius: 0 3.75rem;
-
   overflow: hidden;  
   object-fit: cover;
 }
