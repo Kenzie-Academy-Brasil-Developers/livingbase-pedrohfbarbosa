@@ -5,13 +5,13 @@ export const createCard = (e) => {
   li.classList.add("card")
 
   li.innerHTML = `
-    <div>
+    <div class="img-card">
       <img src="${e.image}" alt="${e.title}">
     </div>
-    <h3>
+    <h3 class="font-3 grey-100">
       ${e.title}
     </h3>
-    <p>
+    <p class="font-4-regular grey-200">
       ${e.description}
     </p>
   `
@@ -19,7 +19,6 @@ export const createCard = (e) => {
   const button = document.createElement("button")
   button.innerText = "Acessar conteúdo"
   button.classList.add("btn-card")
-  button.setAttribute("data-btn-card", e.id)
 
   button.addEventListener("click", () => {
     localStorage.setItem("postId", e.id)

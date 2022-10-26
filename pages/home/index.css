@@ -1,1 +1,72 @@
-/* Desenvolva seu estilo aqui */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--color-grey-700);
+
+  padding: 5rem 0;
+}
+
+header .header-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  max-width: 26.875rem;
+  width: 100%;
+}
+
+header h1 span {
+  color: var(--color-brand-100);
+}
+
+header a {
+  color: var(--color-grey-100);
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+header .header-img {
+  height: 27.5rem;
+  width: 100%;
+  max-width: 36.125rem;
+
+  border-radius: 0 3.75rem;
+
+  overflow: hidden;  
+  object-fit: cover;
+}
+
+header .header-img img {
+  object-fit: cover;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    height: 100vh;
+    gap: 2rem;
+  }
+
+  .cards-wrapper{
+    flex-direction: column;
+  }
+}

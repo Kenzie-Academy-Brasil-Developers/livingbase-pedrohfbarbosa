@@ -22,8 +22,7 @@ export const createButtons = (e) => {
     window.location.replace("../home/index.html")
   })
 
-  return button
-  
+  return button  
 }
 
 export const renderButtonsHome = (className) => {
@@ -37,3 +36,14 @@ export const renderButtonsHome = (className) => {
   })
 }
 
+export const btnClicked = () => {
+  const btnsCategory = [...document.querySelectorAll(".btn-category")]
+
+  btnsCategory.forEach((e) => {
+    e.classList.remove("btn-clicked")
+
+    if (localStorage.getItem("categoryNow") == e.innerText){
+      e.classList.add("btn-clicked")
+    }
+  })
+}

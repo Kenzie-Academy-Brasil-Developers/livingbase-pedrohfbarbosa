@@ -7,10 +7,10 @@ export const mainPost = async (id) => {
 
   sectionPost.innerHTML = `
     <div class="post-header">
-      <h2>
+      <h2 class="font-1 grey-100">
         ${post.title}
       </h2>
-      <p>
+      <p class="font-4-regular grey-200">
         ${post.description}
       </p>
     </div>
@@ -20,7 +20,7 @@ export const mainPost = async (id) => {
     </div>
 
     <div class="post-body">
-      <p>
+      <p class="font-4-regular grey-200">
         ${post.content}
       </p>
     </div>

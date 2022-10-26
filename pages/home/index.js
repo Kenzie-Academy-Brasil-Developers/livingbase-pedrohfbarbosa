@@ -1,4 +1,4 @@
-import { renderButtonsHome } from "../../scripts/buttons.js";
+import { btnClicked, renderButtonsHome } from "../../scripts/buttons.js";
 import { renderCards } from "../../scripts/cards.js";
 import { saveCategories } from "../../scripts/categories.js";
 import { setInitialCategoryLocalStorage } from "../../scripts/localStorage.js";
@@ -16,14 +16,6 @@ await renderCards(localStorage.getItem("categoryNow"), page)
 
 const observerDiv = document.querySelector(".observer")
 
-/* console.log((await getNews(page))) */
-
-
-/* window.addEventListener("beforeunload", (e)=> {
-  e.preventDefault()
-  localStorage.removeItem("categoryNow")
-}) */
-
 const observer = new IntersectionObserver((entries) => {  
   if (entries.some((entry) => entry.isIntersecting)){
     renderCards(localStorage.getItem("categoryNow"), page++)
@@ -31,3 +23,5 @@ const observer = new IntersectionObserver((entries) => {
 })
 
 observer.observe(observerDiv)
+
+btnClicked()
