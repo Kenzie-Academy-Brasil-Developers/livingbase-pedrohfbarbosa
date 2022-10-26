@@ -8,7 +8,7 @@ await saveCategories()
 
 setInitialCategoryLocalStorage()
 
-renderButtonsHome()
+renderButtonsHome("btns-wrapper")
 
 let page = 0
 
