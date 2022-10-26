@@ -22,7 +22,9 @@ export const createCard = (e) => {
   button.setAttribute("data-btn-card", e.id)
 
   button.addEventListener("click", () => {
-    console.log(button.getAttribute("data-btn-card"))
+    localStorage.setItem("postId", e.id)
+
+    /* window.location.replace("../post/index.html") */
   })
 
   li.appendChild(button)
@@ -32,8 +34,7 @@ export const createCard = (e) => {
 
 export const renderCards = async (category, page) => {
   const cardsWrapper = document.querySelector(".cards-wrapper")
-  cardsWrapper.innerHTML = ""
-
+  
   const news = await getNews(page)
 
   let newsToShow = [...news]

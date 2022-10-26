@@ -28,3 +28,4 @@ export const getNews = async (page) => {
     console.log(err)
   }
 }
+

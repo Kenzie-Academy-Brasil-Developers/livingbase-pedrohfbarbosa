@@ -10,8 +10,9 @@ export const createButtons = (e) => {
 
     localStorage.setItem("categoryNow", e)
 
-    renderCards(e, 0)
-    /* window.location.replace("../home/index.html") */
+    document.querySelector(".cards-wrapper").innerHTML = ''
+    /* renderCards(localStorage.getItem("categoryNow"), 0) */
+    window.location.replace("../home/index.html")
   })
 
   return button
