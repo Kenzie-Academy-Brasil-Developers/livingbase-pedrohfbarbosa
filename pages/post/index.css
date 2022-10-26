@@ -1,5 +1,8 @@
+body {
+  background-color: var(--color-white);
+}
+
 header {
-  background-color: white;
   height: 6.125rem;
   display: flex;
   align-items: center;
@@ -15,6 +18,10 @@ main {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+}
+
+.post-header {
+  background-color: var(--color-grey-700);
 }
 
 .btns-wrapper-post {

@@ -7,19 +7,23 @@ export const mainPost = async (id) => {
 
   sectionPost.innerHTML = `
     <div class="post-header">
-      <h2 class="font-1 grey-100">
-        ${post.title}
-      </h2>
-      <p class="font-4-regular grey-200">
-        ${post.description}
-      </p>
+      <div class="container">
+        <h2 class="font-1 grey-100">
+          ${post.title}
+        </h2>
+        <p class="font-4-regular grey-200">
+          ${post.description}
+        </p>
+      </div>
     </div>
 
-    <div class="post-img">
-      <img src="${post.image}" alt="${post.title}">  
+    <div class="container">
+      <div class="post-img">
+        <img src="${post.image}" alt="${post.title}">  
+      </div>
     </div>
 
-    <div class="post-body">
+    <div class="post-body container">
       <p class="font-4-regular grey-200">
         ${post.content}
       </p>
