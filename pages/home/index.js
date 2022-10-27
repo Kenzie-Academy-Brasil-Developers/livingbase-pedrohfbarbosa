@@ -13,6 +13,7 @@ renderButtonsHome("btns-wrapper")
 let page = 0
 
 await renderCards(localStorage.getItem("categoryNow"), page)
+page++
 
 const observerDiv = document.querySelector(".observer")
 
@@ -21,7 +22,8 @@ const observer = new IntersectionObserver(async (entries) => {
     const news = await getNews(page)
 
     if (news.length > 0){
-      renderCards(localStorage.getItem("categoryNow"), page++)
+      renderCards(localStorage.getItem("categoryNow"), page)
+      page++
     }
   }
 })
