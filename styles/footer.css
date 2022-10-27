@@ -22,5 +22,17 @@ footer {
 }
 
 .footer-text {  
-  width: 34rem;
+  width: 100%;
+  max-width: 34rem;
+}
+
+@media (max-width: 900px) {
+  footer .footer-main{
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  footer .footer-text {
+    display: none;
+  }
 }
