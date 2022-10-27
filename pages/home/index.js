@@ -2,6 +2,7 @@ import { btnClicked, renderButtonsHome } from "../../scripts/buttons.js";
 import { renderCards } from "../../scripts/cards.js";
 import { saveCategories } from "../../scripts/categories.js";
 import { setInitialCategoryLocalStorage } from "../../scripts/localStorage.js";
+import { getNews } from "../../scripts/requests.js";
 
 await saveCategories()
 
@@ -15,9 +16,13 @@ await renderCards(localStorage.getItem("categoryNow"), page)
 
 const observerDiv = document.querySelector(".observer")
 
-const observer = new IntersectionObserver((entries) => {  
+const observer = new IntersectionObserver(async (entries) => {  
   if (entries.some((entry) => entry.isIntersecting)){
-    renderCards(localStorage.getItem("categoryNow"), page++)
+    const news = await getNews(page)
+
+    if (news.length > 0){
+      renderCards(localStorage.getItem("categoryNow"), page++)
+    }
   }
 })
 
